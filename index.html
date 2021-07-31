@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <title>Pomodoro</title>
+</head>
+<body>
+    <header>
+        <h1 class="title">Pomodoro</h1>
+    </header>
+    <section class="pomodoro">
+        <div class="pomodoro-container">
+            <div class="timer-container">
+                <div class="timer-content">
+                    <span id="minutes"></span><span>:</span><span id="seconds"></span>
+                <p>Work</p>
+                </div>
+            </div>
+            <div class="buttons-container">
+                <i data-feather="play" onclick="startCounter()"></i>
+                <i id="pause" data-feather="pause" onclick="pauseCounter()"></i>
+                <i data-feather="refresh-ccw" onclick="resetCounter()"></i>
+            </div>
+        </div>
+    </section>
+   
+    
+    <script src="script.js"></script>
+</body>
+</html>
